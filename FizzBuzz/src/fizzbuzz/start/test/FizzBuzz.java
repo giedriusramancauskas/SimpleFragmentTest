@@ -7,6 +7,8 @@ public class FizzBuzz {
   static int COUNTER = 0;
 
   private static String word = "";
+ 
+ //This is a Random comment
 
   public static void main(String[] args) {
     // System.out.println(word);
