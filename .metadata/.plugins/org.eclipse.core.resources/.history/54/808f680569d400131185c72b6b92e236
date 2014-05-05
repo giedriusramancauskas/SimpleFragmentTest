@@ -1,0 +1,40 @@
+package fizzbuzz.start.test;
+
+import java.text.NumberFormat;
+import java.util.Formatter;
+import javax.swing.text.NumberFormatter;
+
+public class FizzBuzz {
+
+  static int COUNTER = 0;
+
+  private static String word = "";
+
+  public static void main(String[] args) {
+    // System.out.println(word);
+    
+    int nuberOfOlives= 1_000_000_000;
+    NumberFormat formatter = NumberFormat.getInstance();
+    System.out.println(formatter.format(nuberOfOlives));
+    
+    
+    while (COUNTER < 100) {
+      if (COUNTER % 3 == 0) {
+        System.out.println(COUNTER + " " + word + "Buzz");
+        System.out.println();
+
+      }
+
+      if (COUNTER % 5 == 0) {
+        System.out.println(COUNTER + " " + word + "FizzBuzz");
+
+      }
+      else {
+        System.out.println(COUNTER + " " + word + "Fizz");
+      }
+      COUNTER++;
+
+    }
+  }
+
+}
